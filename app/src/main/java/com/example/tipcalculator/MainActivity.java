@@ -95,7 +95,7 @@ public class MainActivity extends AppCompatActivity {
     public void radioButtonClicked(View v) {
 
         //If input is invalid
-        if (totalBillInput.getText().toString().isEmpty()) {
+        if (totalBillInput.getText().toString().isEmpty() || Double.parseDouble(totalBillInput.getText().toString())<=0) {
 
             radio_twelve.setChecked(false);
             radio_fifteen.setChecked(false);
